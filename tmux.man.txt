@@ -8,6 +8,7 @@ prefix + d # detach
 prefix + x # kill pane
 prefix + | # split vertically
 prefix + - # split horizontally
+prefix + q # show pane numbers
 alt + [Arrow Key] # switch between panes
 
 prefix + c # new window
