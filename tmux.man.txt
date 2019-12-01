@@ -1,0 +1,19 @@
+$ t         # start session
+$ tl        # list sessions
+$ ta [name] # attach to session [name]
+$ tk [name] # kill session [name]
+
+prefix: Ctrl+a
+prefix + d # detach
+prefix + x # kill pane
+prefix + | # split vertically
+prefix + - # split horizontally
+alt + [Arrow Key] # switch between panes
+
+prefix + c # new window
+prefix + , # name window
+prefix + n # next window
+prefix + p # prev window
+prefix + w # list windows
+prefix + & # kill window
+

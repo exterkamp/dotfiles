@@ -1,3 +1,12 @@
+# Easier navigation: .., ..., ~ and -
+alias ..="cd .."
+alias cd..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
 ###
 # time to upgrade `ls`
 
@@ -13,3 +22,26 @@ alias ls='gls -AFh ${colorflag} --group-directories-first'
 alias lsd='ls -l | grep "^d"' # only directories
 #    `la` defined in .functions
 ###
+
+###
+# GIT STUFF
+
+alias push="git push"
+
+# Undo a `git push`
+alias undopush="git push -f origin HEAD^:master"
+
+# Shortcuts
+alias g="git"
+alias v="vim"
+
+###
+# TMUX
+
+alias t='tmux attach || tmux new-session'
+alias ta='tmux attach -t'
+alias tn='tmux new-session'
+alias tl='tmux list-sessions'
+alias tk='tmux kill-session -t'
+alias tman='cat ~/tmux.man.txt'
+
