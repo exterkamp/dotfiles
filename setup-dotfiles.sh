@@ -9,6 +9,14 @@ npm install -g diff-so-fancy
 ##############################################################################################################
 
 
+if ! [ -x "$(command -v brew)" ]; then
+  mkdir $HOME/homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $HOME/homebrew
+  export PATH=$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH
+  # /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+./brew.sh
+
 ##############################################################################################################
 ### symlinks to link dotfiles into ~/
 ###
