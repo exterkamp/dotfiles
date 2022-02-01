@@ -40,3 +40,6 @@ if type __git_complete &> /dev/null; then
     __git_complete g __git_main
 fi;
 
+# Enable nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
