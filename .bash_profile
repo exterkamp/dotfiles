@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Load dotfiles
 for file in ~/.{extra,bash_prompt,exports,aliases,functions,google_aliases}; do
 	[ -r "$file" ] && source "$file"
